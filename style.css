@@ -6,8 +6,8 @@
 }
 body{
 	font-family: 'Montserrat', sans-serif;
-	background: #fff url(Group 21.png) 0 0 no-repeat;
 	overflow:hidden;
+	background: #fff url() 0 0 no-repeat;
 }
 .container{
 	width: 100%;
@@ -19,17 +19,12 @@ body{
 	-webkit-background-size: cover;
 	background-size: cover;
 	padding: 0px 200px;
+	 
 }
-
-
-
-
-
-
 .menu{
-/*	border: 1px solid #fff;*/
 	grid-column: 1/3;
 	grid-row: 1/2;
+ 
 	display: flex;
 	justify-content: space-around;
 	display: flex;
@@ -40,19 +35,12 @@ body{
 	font-weight: 300;
 	font-family: 'Montserrat', sans-serif;
 }
-
-
-
-
-
-
 .logo{
 	display: flex;
 	align-items: center;
 	width: 280px;
 	object-fit: cover;
 }
-
 .socials{
 	display: flex;
 	justify-content: center;
@@ -60,27 +48,29 @@ body{
 }
 .phoneandmail_mob{
 	display: none;
+	font-size: 50px;
 }
 .phone a, .mail a{
 text-decoration: none;
 	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
 }
-
 .pages ul li{
-	margin-left:7px;
+	margin-left:10px;
 	color: #fff;
 }
 .pages ul li:hover {
 	color: #14C2A9;
 	transition:  0.2s linear;
 	transform: scale(1.1);
-	 text-shadow: 0 0 10px #14C2A9 ;
+	 text-shadow: 0 0 15px #14C2A9 ;
 }
 .phone a:hover , .mail a:hover{
 	color: #14C2A9;
 	transition:  0.2s linear;
 	cursor: pointer;
-	 text-shadow: 0 0 20px #14C2A9 ;
+	 text-shadow: 0 0 15px #14C2A9 ;
 }
 .phone:hover{
 	color: #14C2A9;
@@ -88,7 +78,6 @@ text-decoration: none;
 	cursor: pointer;
 	 text-shadow: 0 0 20px #14C2A9 ;
 }
-
 .phoneandmail{
 	display: flex;
 	color: #fff;
@@ -107,44 +96,14 @@ text-decoration: none;
 
 
 
-
-.forma{
-/*	border: 1px solid #fff;	*/
-	grid-column: 1/2;
-	grid-row: 3/4;
-	display: flex;
-	flex-direction: column;
- 	justify-content: space-around;
-	font-weight: bold;
-	min-width: 0;
-	color: #fff;
-}
-
-
-
-
-
-
-
-
-
 .forma_text{
-/*	border: 1px solid #fff;*/
 	grid-column: 1/2;
 	grid-row: 2/3;
+ 
 	font-weight: bold;
 	min-width: 0;
 	color: #fff;
 }
-
-
-
-
-
-
-
-
-
 .forma_text h1{
 	width: 500px;
 	font-size: 60px;
@@ -161,6 +120,25 @@ text-decoration: none;
 	margin-top: 15px;
 	margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+.forma{
+	grid-column: 1/2;
+	grid-row: 3/4;
+ 
+	display: flex;
+	flex-direction: column;
+ 	justify-content: space-around;
+	font-weight: bold;
+	min-width: 0;
+	color: #fff;
+}
+
 .forma_bottom h3{
 	width: 400px;
 	margin-bottom: 10px;
@@ -181,6 +159,8 @@ input[type=text]{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	border: none;
+	-moz-box-shadow: 0 0 0 1px #fff inset;
+	-webkit-box-shadow: 0 0 0 1px #fff inset;
 	box-shadow: 0 0 0 1px #fff inset;
 	outline: none;
 	 
@@ -200,24 +180,18 @@ textarea{
 	font-size: 16px;
 	transition:  0.2s linear;
 	border: none;
+	-moz-box-shadow: 0 0 0 1px #fff inset;
+	-webkit-box-shadow: 0 0 0 1px #fff inset;
 	box-shadow: 0 0 0 1px #fff inset;
 	outline: none;
 	resize: none;
 }
-
-.none{
-	display: none;
-}
-.block{
-	display: block;
-}
-
-
 .button_send{
 	background: linear-gradient(120deg,#14C2A9 40%,#1031F090 80%);
 	color: #fff;
 	outline: none;
 	border: none;
+	cursor: pointer;
 }
 input[type=reset]{
 	outline: none;
@@ -231,7 +205,6 @@ input[type=reset]{
 	border: none;
     outline: none;
 }
-
 .button_send:hover{
 	background: linear-gradient(130deg,#14C2A9 30%,#1031F090 90%);
 	color: #fff;
@@ -246,20 +219,17 @@ input[type=reset]{
 
 
 
+
+
+
+
 .slider_1{
-/*	border: 1px solid #fff; */
 	grid-column: 2/3;
 	grid-row: 2/4;
+ 
 	min-width: 0;
 	position: relative; 
 }
-
-
-
-
-
-
-
  .copyright{
 	position: absolute;
 	color: #fff;
@@ -288,7 +258,6 @@ z-index: 10;
  	padding-left: 100px;
  	color: #fff;
  }
-
 .slider_text h1{
  	margin-top: -30px;
 	 font-weight: 900;
@@ -323,7 +292,6 @@ z-index: 10;
 	padding-top: 90px;
 	width: 100%;
 }
-
 .slick-arrow.slick-prev{left: 0;}
 .slick-arrow.slick-next{right: 0;}
 
@@ -336,19 +304,9 @@ z-index: 10;
 
 
 
-
-
-
 .bottom_section{
-/*	border: 1px solid #fff;*/
 	display: none;
 }
-
-
-
-
-
-
 @media screen and (max-width: 1441px){
 .container{
 	padding: 0px 110px;
@@ -406,14 +364,14 @@ textarea{
 
 
 }
-
 @media screen and (max-width: 868px){
+
 	body{
 		overflow: scroll;
 	}
  	.container{
 	width: 100%;
-	height: 1300px;
+	height: 1350px;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 0.5fr 1fr 7fr 1fr 0.5fr;
@@ -423,10 +381,6 @@ textarea{
 	padding: 10px 100px;
 
 }
-
-
-
-
 .menu{
 	grid-column: 1/2;
 	grid-row: 1/2;
@@ -443,6 +397,12 @@ textarea{
 	top: 0;
 	left: 105px;
 	font-size: 30px;
+} 
+.phone a, .mail a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	font-size: 40px;
 }
 .pages{
 	display: none;
@@ -461,6 +421,13 @@ textarea{
 }
 .copyright_2{
 	color: #fff;
+	display: flex;
+	flex-flow: column;
+}
+.copyright_2 a{
+text-decoration: none;	
+color: #fff;
+font-size: 10px;	
 }
 .forma_text{
 	grid-column: 1/2;
@@ -493,12 +460,16 @@ textarea{
  	color: #fff;
 }
 .bottom_section{
+	grid-column: 1/2;
+	grid-row: 5/6;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-top:  1px solid #fff;
 	margin-top: 40px;
 }
+
+
 
 }
 @media screen and (max-width: 768px){
@@ -545,12 +516,17 @@ textarea{
 	grid-column: 1/2;
 	grid-row: 1/2;
 	padding: 5px 10px;
+
+}
+.phone a, .mail a{
+	font-size: 30px;
 }
 
+}
 @media screen and (max-width: 495px){
 
  	.container{
-	height: 1095px;
+	height: 1105px;
 	grid-template-columns: 1fr;
 	grid-template-rows: 2fr 4fr 6fr 4fr 0.5fr;
 }
@@ -582,7 +558,6 @@ textarea{
 }
 .forma_bottom h3{
 	font-size: 16px;
-}
 }
 @media screen and (max-width: 385px){
 	 	.container{
